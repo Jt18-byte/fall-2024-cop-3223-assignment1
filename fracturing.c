@@ -44,7 +44,6 @@ void userinput(double *x1, double *y1, double *x2, double *y2) {
 double calculateDistance() {
     double x1, y1, x2, y2;
     userinput(&x1, &y1, &x2, &y2);
-
     double distance = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 
     printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
@@ -57,6 +56,7 @@ double calculateDistance() {
 
 // This function is to calculate the perimeter
 double calculatePerimeter() {
+    
     double x1, y1, x2, y2;
     userinput(&x1, &y1, &x2, &y2);
 
@@ -91,9 +91,9 @@ double calculateArea() {
 
 // This function is to calculate the width
 double calculateWidth() {
+    
     double x1, y1, x2, y2;
     userinput(&x1, &y1, &x2, &y2);
-
     double width = fabs(x2 - x1);
 
     printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
@@ -106,9 +106,9 @@ double calculateWidth() {
 
 // This function is to calculate the height
 double calculateHeight() {
+   
     double x1, y1, x2, y2;
     userinput(&x1, &y1, &x2, &y2);
-
     double height = fabs(y2 - y1);
 
     printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
